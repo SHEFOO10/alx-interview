@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 In a text file, there is a single character H.
 Your text editor can execute only two operations in this file:
@@ -8,7 +8,7 @@ needed to result in exactly n H characters in the file.
 """
 
 
-def minOperations(n) -> int:
+def minOperations(n: int) -> int:
     """
     Return: int
     if n is impossible to achieve, return 0
