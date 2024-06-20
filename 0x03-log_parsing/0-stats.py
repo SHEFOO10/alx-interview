@@ -30,7 +30,8 @@ try:
         if len(line_list) > 4:
             requests += 1
             status, file_size = line_list[-2], int(line_list[-1])
-            codes_hits[status] += 1
+            if status in codes_hits.keys():
+                codes_hits[status] += 1
             Total_size += file_size
             if requests == 10:
                 print_stats()
