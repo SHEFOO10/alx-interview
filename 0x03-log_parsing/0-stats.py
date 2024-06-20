@@ -35,5 +35,7 @@ try:
             if requests == 10:
                 print_stats()
                 requests = 0
+except Exception:
+    pass
 finally:
     print_stats()
