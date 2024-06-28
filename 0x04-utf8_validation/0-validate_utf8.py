@@ -19,7 +19,7 @@ def validUTF8(data):
         byte = calcBytes(data[i])
         boundry = i + byte - (byte != 0)
         i += 1
-        if byte == 1 or byte > 4 or boundry > len(data):
+        if byte == 1 or byte > 4 or boundry >= len(data):
             return False
         while i < len(data) and i <= boundry:
             currentItem = calcBytes(data[i])
