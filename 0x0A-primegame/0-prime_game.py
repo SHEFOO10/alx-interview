@@ -17,7 +17,7 @@ def isWinner(x, nums):
 
         isMariaTurn = True
 
-        while (True):
+        for round in range(x):
             if not primesSet:
                 if isMariaTurn:
                     benWinsCount += 1
